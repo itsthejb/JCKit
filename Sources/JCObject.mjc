@@ -1,9 +1,9 @@
 //
-//  JCObject.m
+//  JCObject.mjc
 //  JCKit
 //
 //  Created by jc on 17/09/2012.
-//  Copyright (c) 2012 nxtbgthng GmhH. All rights reserved.
+//  Copyright (c) 2012 Omni Consumer Products. All rights reserved.
 //
 
 #import "JCObject.h"
