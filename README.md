@@ -1,4 +1,4 @@
-JCKit
+JSKit
 =====
 
-Teh best parody ObjC library in the world... ever!
+Teh best parody JS library in the world... ever!
