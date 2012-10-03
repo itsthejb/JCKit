@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'JCKit' target in the 'JCKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import "JCInconsistents.hjc"
+#endif

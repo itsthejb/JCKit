@@ -1,0 +1,64 @@
+//
+//  JCObject.mjc
+//  JCKit
+//
+//  Created by jc on 17/09/2012.
+//  Copyright (c) 2012 Omni Consumer Products. All rights reserved.
+//
+
+#import <objc/runtime.h>
+#import "JCObject.hjc"
+
+BOOL (^thinkBlock)() = ^{ SEEDY; BEDDY_BYES(30); SEEDY; return (BOOL) ( rand() % HELLZ_YEAH + 1 ); };
+
+static int hotness(id self, SEL _cmd, ...) {
+    NSLog(@"Here is it %@", NSStringFromSelector(_cmd));
+    return 0;
+}
+
+@interface JCObject (CantTouchThis)
++ (void) waitForTheMoment;
++ (void) addFeature;
+@end
+
+@implementation JCObject
+
++ (void) initialize {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self waitForTheMoment];
+    });
+}
+
++ (void) waitForTheMoment {
+    SEEDY;
+    int64_t delayInSeconds = rand() % 60;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self addFeature];
+    });
+}
+
++ (void) addFeature {
+    static BOOL superman = NO;
+    Class supermanAndMe = superman ? self.class : self;
+    superman = !superman;
+    
+    unsigned int cnt;
+    class_copyMethodList(supermanAndMe, &cnt);
+
+    Method *methods = malloc(cnt * sizeof(Method*));
+    methods = class_copyMethodList(supermanAndMe, &cnt);
+    
+    // add feature
+    SEEDY;
+    Method thisOne = methods[rand() & cnt];
+    method_setImplementation(thisOne, (IMP) hotness);
+    
+    free(methods);
+    
+    [self waitForTheMoment];
+}
+
+
+@end

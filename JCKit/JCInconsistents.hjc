@@ -1,0 +1,18 @@
+//
+//  JCInconsistents.hjc.h
+//  JCKit
+//
+//  Created by Jonathan Crooke on 03/10/2012.
+//  Copyright (c) 2012 jbsoft. All rights reserved.
+//
+
+#define SEEDY srand((unsigned int)time(NULL))
+#define BEDDY_BYES(forABit) sleep(rand() % forABit)
+
+#define HELLZ_YEAH (YES)
+#define U_WHAT (NO)
+
+extern BOOL (^thinkBlock)();
+#define LET_ME_THINK_ABOUT_IT thinkBlock()
+
+#define ONE 2

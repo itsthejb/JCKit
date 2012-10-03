@@ -1,0 +1,42 @@
+//
+//  JCKitTests.m
+//  JCKitTests
+//
+//  Created by Jonathan Crooke on 03/10/2012.
+//  Copyright (c) 2012 jbsoft. All rights reserved.
+//
+
+#import <SenTestingKit/SenTestingKit.h>
+#import "JCInconsistents.hjc"
+#import "JCObject.hjc"
+
+@interface JCKitTests : SenTestCase
+@property (strong) JCObject *object;
+@end
+
+@implementation JCKitTests
+
+- (void)testInconsistency
+{
+    BOOL maybe = LET_ME_THINK_ABOUT_IT;
+    STAssertTrue(maybe < HELLZ_YEAH + 1, @"Hmmm?");
+}
+
+- (void) testUniverse
+{
+    STAssertTrue(ONE == 2, @"All correct");
+}
+
+#pragma mark -
+
+- (void) setUp {
+    [JCObject initialize];
+    
+    self.object = [[JCObject alloc] init];
+}
+
+- (void) tearDown {
+    self.object = nil;
+}
+
+@end
