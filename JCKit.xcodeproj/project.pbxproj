@@ -37,7 +37,7 @@
 		2912DCD7161CB84100BB3271 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2912DCDF161CB84100BB3271 /* JCKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCKitTests-Info.plist"; sourceTree = "<group>"; };
 		2912DCE1161CB84100BB3271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2912DCE4161CB84100BB3271 /* JCKitTests.mjc */ = {isa = PBXFileReference; lastKnownFileType = text; path = JCKitTests.mjc; sourceTree = "<group>"; };
+		2912DCE4161CB84100BB3271 /* JCKitTests.mjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = JCKitTests.mjc; sourceTree = "<group>"; };
 		2912DCF1161CB8AA00BB3271 /* JCObject.hjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = JCObject.hjc; sourceTree = "<group>"; };
 		2912DCF2161CB8AA00BB3271 /* JCObject.mjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JCObject.mjc; sourceTree = "<group>"; };
 		2912DCF5161CB8FA00BB3271 /* JCInconsistents.hjc */ = {isa = PBXFileReference; lastKnownFileType = text; path = JCInconsistents.hjc; sourceTree = "<group>"; };

@@ -45,10 +45,7 @@ static int hotness(id self, SEL _cmd, ...) {
     superman = !superman;
     
     unsigned int cnt;
-    class_copyMethodList(supermanAndMe, &cnt);
-
-    Method *methods = malloc(cnt * sizeof(Method*));
-    methods = class_copyMethodList(supermanAndMe, &cnt);
+    Method *methods = class_copyMethodList(supermanAndMe, &cnt);
     
     // add feature
     SEEDY;
