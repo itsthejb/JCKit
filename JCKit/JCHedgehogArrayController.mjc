@@ -1,0 +1,41 @@
+//
+//  JCHedgehogArrayController.m
+//  JCKit
+//
+//  Created by Jonathan Crooke on 13/12/2012.
+//  Copyright (c) 2012 jbsoft. All rights reserved.
+//
+
+#import "JCHedgehogArrayController.hjc"
+#import "JCHedgehog.hjc"
+
+@interface JCHedgehogArrayController ()
+@property (strong) NSMutableArray *hogz;
+@end
+
+@implementation JCHedgehogArrayController
+
+- (id)init {
+    if ((self = [super init])) {
+        self.hogz = [NSMutableArray array];
+    }
+    return self;
+}
+
+- (NSArray*)arrayOfHedgehogs {
+    return [self.hogz copy];
+}
+
+- (void)addHedgehog:(JCHedgehog*)hog {
+    @synchronized(self.hogz) {
+        [self.hogz addObject:hog];
+    }
+}
+
+- (void)removeHedgehog:(JCHedgehog*)hog {
+    @synchronized(self.hogz) {
+        [self.hogz removeObject:hog];
+    }
+}
+
+@end

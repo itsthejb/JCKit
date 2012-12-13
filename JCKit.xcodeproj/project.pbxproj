@@ -14,6 +14,12 @@
 		2912DCE2161CB84100BB3271 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2912DCE0161CB84100BB3271 /* InfoPlist.strings */; };
 		2912DCE5161CB84100BB3271 /* JCKitTests.mjc in Sources */ = {isa = PBXBuildFile; fileRef = 2912DCE4161CB84100BB3271 /* JCKitTests.mjc */; };
 		2912DCF4161CB8C400BB3271 /* JCObject.mjc in Sources */ = {isa = PBXBuildFile; fileRef = 2912DCF2161CB8AA00BB3271 /* JCObject.mjc */; };
+		2920E2751679E04800C7A711 /* JCHedgehog.hjc in Headers */ = {isa = PBXBuildFile; fileRef = 2920E2731679E04800C7A711 /* JCHedgehog.hjc */; };
+		2920E2761679E04800C7A711 /* JCHedgehog.mjc in Sources */ = {isa = PBXBuildFile; fileRef = 2920E2741679E04800C7A711 /* JCHedgehog.mjc */; };
+		2920E2771679E04800C7A711 /* JCHedgehog.mjc in Sources */ = {isa = PBXBuildFile; fileRef = 2920E2741679E04800C7A711 /* JCHedgehog.mjc */; };
+		2920E27C1679E0F200C7A711 /* JCHedgehogArrayController.hjc in Headers */ = {isa = PBXBuildFile; fileRef = 2920E27A1679E0F200C7A711 /* JCHedgehogArrayController.hjc */; };
+		2920E27D1679E0F200C7A711 /* JCHedgehogArrayController.mjc in Sources */ = {isa = PBXBuildFile; fileRef = 2920E27B1679E0F200C7A711 /* JCHedgehogArrayController.mjc */; };
+		2920E27E1679E0F200C7A711 /* JCHedgehogArrayController.mjc in Sources */ = {isa = PBXBuildFile; fileRef = 2920E27B1679E0F200C7A711 /* JCHedgehogArrayController.mjc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +44,13 @@
 		2912DCDF161CB84100BB3271 /* JCKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCKitTests-Info.plist"; sourceTree = "<group>"; };
 		2912DCE1161CB84100BB3271 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2912DCE4161CB84100BB3271 /* JCKitTests.mjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = JCKitTests.mjc; sourceTree = "<group>"; };
-		2912DCF1161CB8AA00BB3271 /* JCObject.hjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = JCObject.hjc; sourceTree = "<group>"; };
+		2912DCF1161CB8AA00BB3271 /* JCObject.hjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JCObject.hjc; sourceTree = "<group>"; };
 		2912DCF2161CB8AA00BB3271 /* JCObject.mjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JCObject.mjc; sourceTree = "<group>"; };
-		2912DCF5161CB8FA00BB3271 /* JCInconsistents.hjc */ = {isa = PBXFileReference; lastKnownFileType = text; path = JCInconsistents.hjc; sourceTree = "<group>"; };
+		2912DCF5161CB8FA00BB3271 /* JCInconsistents.hjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = JCInconsistents.hjc; sourceTree = "<group>"; };
+		2920E2731679E04800C7A711 /* JCHedgehog.hjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JCHedgehog.hjc; sourceTree = "<group>"; };
+		2920E2741679E04800C7A711 /* JCHedgehog.mjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JCHedgehog.mjc; sourceTree = "<group>"; };
+		2920E27A1679E0F200C7A711 /* JCHedgehogArrayController.hjc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JCHedgehogArrayController.hjc; sourceTree = "<group>"; };
+		2920E27B1679E0F200C7A711 /* JCHedgehogArrayController.mjc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = JCHedgehogArrayController.mjc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +117,11 @@
 		2912DCCB161CB84100BB3271 /* JCKit */ = {
 			isa = PBXGroup;
 			children = (
+				2912DCCC161CB84100BB3271 /* Supporting Files */,
 				2912DCF1161CB8AA00BB3271 /* JCObject.hjc */,
 				2912DCF2161CB8AA00BB3271 /* JCObject.mjc */,
 				2912DCF5161CB8FA00BB3271 /* JCInconsistents.hjc */,
-				2912DCCC161CB84100BB3271 /* Supporting Files */,
+				2920E2791679E0DC00C7A711 /* Hedgehogs */,
 			);
 			path = JCKit;
 			sourceTree = "<group>";
@@ -141,6 +152,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2920E2791679E0DC00C7A711 /* Hedgehogs */ = {
+			isa = PBXGroup;
+			children = (
+				2920E27A1679E0F200C7A711 /* JCHedgehogArrayController.hjc */,
+				2920E27B1679E0F200C7A711 /* JCHedgehogArrayController.mjc */,
+				2920E2731679E04800C7A711 /* JCHedgehog.hjc */,
+				2920E2741679E04800C7A711 /* JCHedgehog.mjc */,
+			);
+			name = Hedgehogs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -148,6 +170,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2920E2751679E04800C7A711 /* JCHedgehog.hjc in Headers */,
+				2920E27C1679E0F200C7A711 /* JCHedgehogArrayController.hjc in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2912DCF4161CB8C400BB3271 /* JCObject.mjc in Sources */,
+				2920E2761679E04800C7A711 /* JCHedgehog.mjc in Sources */,
+				2920E27D1679E0F200C7A711 /* JCHedgehogArrayController.mjc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2912DCE5161CB84100BB3271 /* JCKitTests.mjc in Sources */,
+				2920E2771679E04800C7A711 /* JCHedgehog.mjc in Sources */,
+				2920E27E1679E0F200C7A711 /* JCHedgehogArrayController.mjc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,13 @@
+//
+//  JCHedgehog.h
+//  JCKit
+//
+//  Created by Jonathan Crooke on 13/12/2012.
+//  Copyright (c) 2012 jbsoft. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface JCHedgehog
+
+@end
